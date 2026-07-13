@@ -22,10 +22,10 @@ section[data-testid="stSidebar"] h1{font-size:18px}
 /* Colonne gauche / droite : filet de séparation */
 [data-testid="stColumn"]{padding:0 6px}
 
-/* Onglets de chat (façon HERMES_LITE) */
-.stTabs [data-baseweb="tab-list"]{gap:2px;flex-wrap:wrap}
+/* Onglets de chat — plus larges */
+.stTabs [data-baseweb="tab-list"]{gap:4px;flex-wrap:wrap}
 .stTabs [data-baseweb="tab"]{background:var(--bg2);border:1px solid var(--border);
-  border-radius:6px 6px 0 0;padding:3px 12px;color:var(--muted);font-size:13px}
+  border-radius:6px 6px 0 0;padding:4px 18px;color:var(--muted);font-size:13px;min-width:90px}
 .stTabs [aria-selected="true"]{color:var(--blue);border-bottom:2px solid var(--blue)}
 
 /* Cartes de chat */
@@ -97,8 +97,8 @@ code{color:var(--yellow)}
   font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;line-height:1.5;color:#c9d1d9;
   white-space:pre-wrap;word-break:break-word;height:660px;overflow-y:auto}
 
-/* Page compacte (moins de scroll global) */
-.block-container{padding-top:2.2rem;padding-bottom:0.5rem}
+/* Page compacte (gagner de l'espace vertical) */
+.block-container{padding-top:1rem;padding-bottom:0.3rem;max-width:100%}
 /* Supprimer le défilement de la page (les conteneurs internes scrollent eux-mêmes) */
 section[data-testid="stMain"]{overflow:hidden}
 /* Nav sidebar = boutons rectangulaires, bleu quand sélectionné (comme les onglets) */

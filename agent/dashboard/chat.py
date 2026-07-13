@@ -224,7 +224,7 @@ def render_chat(agent_info):
     @st.fragment(run_every="1s" if busy else None)
     def _chat_view():
         _live_sync(agent_info)
-        with st.container(height=420):
+        with st.container(height=560):
             _render_history(aid)
             if aid in st.session_state.awaiting:
                 st.caption("💭 l'agent travaille…")

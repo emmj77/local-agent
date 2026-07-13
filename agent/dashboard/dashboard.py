@@ -12,7 +12,7 @@ import streamlit as st
 _AGENT_DIR = Path(__file__).resolve().parent.parent  # agent/
 sys.path.insert(0, str(_AGENT_DIR))
 
-import gpu_manager as gpum
+from core import gpu_manager as gpum
 
 # dashboard/ est un package — on l'ajoute au path pour les imports internes
 _DASH_DIR = Path(__file__).resolve().parent
@@ -48,14 +48,12 @@ with left:
     with st.container(height=760):
         PAGES[st.session_state.page]()
 with right:
-    st.subheader("💬 Agents")
     tabs = st.tabs([a["label"] for a in AGENTS])
     for tab, a in zip(tabs, AGENTS):
         with tab:
             ep = a["endpoint"]
             st.markdown(
-                f"<span class='la-badge'>🔌 <b>{ENDPOINT_LABEL.get(ep, ep)}</b></span>"
-                f"<span class='la-badge'>agent:{a['key']}:queue</span>",
+                f"<span class='la-badge'>🔌 {ENDPOINT_LABEL.get(ep, ep)}</span>",
                 unsafe_allow_html=True)
             c_m, c_t = st.columns([3, 1])
             with c_m:
