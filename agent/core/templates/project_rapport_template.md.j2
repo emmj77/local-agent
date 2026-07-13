@@ -1,0 +1,22 @@
+---
+project_id: "{{ project_id }}"
+project_title: "{{ project_title }}"
+date: "{{ date }}"
+status: "rapport"
+---
+
+# Rapport — {{ project_title }}
+
+## Statut actuel
+{{ status }}
+
+## Avancement
+{{ progress }}
+
+## Blocages
+{{ blockers }}
+
+## Prochaines étapes
+{% for step in next_steps %}
+- {{ step }}
+{% endfor %}

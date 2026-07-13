@@ -1,0 +1,29 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# === Runtime : logs, état, bases ===
+log/
+*.log
+*.db
+*.db-shm
+*.db-wal
+dump.rdb
+context/context.json
+la_pids
+
+# === Node (gitea-mcp, etc.) ===
+**/node_modules/
+*.tsbuildinfo
+
+# === SECRETS — ne JAMAIS versionner ===
+.env
+**/.env
+*.key
+*.pem
+
+# === OS ===
+.DS_Store

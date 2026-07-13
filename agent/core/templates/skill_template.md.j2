@@ -1,0 +1,25 @@
+---
+name: "{{ skill_id }}"
+title: "{{ title }}"
+description: "{{ description }}"
+status: "{{ status }}"
+version: "1.0.0"
+date: "{{ date }}"
+tags: [{% for tag in tags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}]
+---
+
+# {{ title }}
+
+## Description
+{{ description }}
+
+## Prérequis
+{{ prerequisites }}
+
+## Étapes
+{% for step in steps %}
+{{ loop.index }}. {{ step }}
+{% endfor %}
+
+## Notes
+{{ notes }}

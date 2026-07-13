@@ -1,0 +1,1 @@
+"""CLI package — interface terminal pour Local_Agent."""

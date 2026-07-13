@@ -1,0 +1,31 @@
+# Agent local — Harnais léger (llama.cpp local, contexte limité)
+agent:
+  agent_id: "agentlocal"
+  redis_key: "agentlocal"
+  model: "llama-cpp-local"
+  endpoint: "llamacpp"
+  agent_type: "local"
+  name: "Agent Local"
+  role: "Subagent — petites boucles répétitives, économie de tokens"
+  context_window: 32768
+  max_system_tokens: 1000
+  max_history_messages: 10
+  max_tool_calls: 300
+  timeout_http: 30
+  timeout_terminal: 30
+  tools_enabled:
+    - file_manage
+    - codegraph_explore
+    - execute_terminal
+    - gpu_manage
+    - system_manage
+    - network_manage
+    - image_scale
+    - project_manage
+    - memory_manage
+    - session_manage
+    - skill_manage
+    - todo_manage
+    - cron_manage
+    - log_view
+    - vision

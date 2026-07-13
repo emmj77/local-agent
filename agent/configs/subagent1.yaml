@@ -1,0 +1,16 @@
+# Subagent 1 — Google Gemini (AI Studio, free tier)
+# Nécessite GEMINI_API_KEY dans .env
+agent:
+  agent_id: "subagent1"
+  redis_key: "subagent1"
+  model: "gemini-2.5-flash-lite"
+  endpoint: "gemini"
+  agent_type: "standard"
+  name: "Subagent 1"
+  role: "Subagent cloud gratuit (Gemini)"
+  context_window: 32768
+  max_system_tokens: 4000
+  max_history_messages: 50
+  max_tool_calls: 300
+  timeout_http: 120
+  timeout_terminal: 30

@@ -1,0 +1,16 @@
+# Agent 1 — Modèle principal (cloud via LiteLLM)
+agent:
+  agent_id: "agent1"
+  redis_key: "agent1"
+  model: "glm-5.2"
+  endpoint: "cloud"
+  agent_type: "standard"
+  name: "Agent 1"
+  role: "Agent principal — projets prioritaires"
+  context_window: 128768
+  max_system_tokens: 4000
+  max_history_messages: 50
+  max_tool_calls: 300
+  timeout_http: 120
+  timeout_terminal: 30
+  max_output_tokens: 8192

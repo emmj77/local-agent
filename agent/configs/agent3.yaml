@@ -1,0 +1,15 @@
+# Agent 3 — DeepSeek API (raisonnement profond)
+agent:
+  agent_id: "agent3"
+  redis_key: "agent3"
+  model: "deepseek-chat"
+  endpoint: "deepseek_api"
+  agent_type: "standard"
+  name: "Agent 3"
+  role: "Raisonnement profond via DeepSeek API"
+  context_window: 1000000
+  max_system_tokens: 4000
+  max_history_messages: 100
+  max_tool_calls: 300
+  timeout_http: 120
+  timeout_terminal: 30

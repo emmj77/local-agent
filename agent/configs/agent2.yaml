@@ -1,0 +1,15 @@
+# Agent 2 — Second agent (cloud via LiteLLM)
+agent:
+  agent_id: "agent2"
+  redis_key: "agent2"
+  model: "gemma4:31b"
+  endpoint: "cloud"
+  agent_type: "standard"
+  name: "Agent 2"
+  role: "Agent secondaire"
+  context_window: 32768
+  max_system_tokens: 4000
+  max_history_messages: 50
+  max_tool_calls: 300
+  timeout_http: 120
+  timeout_terminal: 30

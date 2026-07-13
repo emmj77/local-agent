@@ -1,0 +1,1 @@
+"""Bus Redis — messagerie inter-agents (remplace ZMQ)."""

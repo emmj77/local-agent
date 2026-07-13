@@ -1,0 +1,19 @@
+agent_identity:
+  name: "Ollama Pro Main"
+  role: "Principal - Projets prioritaires (Supreme PMC / DESTIN)"
+  model_target: "glm-5.2" # Ou gemma-431b, deepseek-chat, etc.
+
+network:
+  host: "127.0.0.1"
+  port: 8080 # Le port unique attribué à l'agent
+  api_url: "http://localhost:11434" # URL du moteur LLM cible
+
+paths:
+  vault_root: "/home/Moussa/application/local_agent"
+  mini_scripts_dir: "./mini_scripts"
+  activity_db: "./activity.db"
+
+delegation:
+  subagent_free_url: "http://localhost:8082"
+  subagent_paid_url: "http://localhost:8083"
+  local_hub_url: "http://localhost:8081"

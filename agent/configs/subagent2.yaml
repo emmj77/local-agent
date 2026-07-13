@@ -1,0 +1,15 @@
+# Subagent 2 — API cloud payante (qualité max)
+agent:
+  agent_id: "subagent2"
+  redis_key: "subagent2"
+  model: "TBD"
+  endpoint: "cloud_paid"
+  agent_type: "standard"
+  name: "Subagent 2"
+  role: "Subagent cloud payant — qualité max"
+  context_window: 32768
+  max_system_tokens: 4000
+  max_history_messages: 50
+  max_tool_calls: 300
+  timeout_http: 120
+  timeout_terminal: 30
